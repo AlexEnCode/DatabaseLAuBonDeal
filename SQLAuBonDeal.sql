@@ -1,13 +1,5 @@
-# DataBase PostgreSQL pour AuBonDeal
+-- Users table creation with user_UUID as a Primary Key
 
-
-
-
-## posgreSQL code
-
-Users table creation with user_UUID as a Primary Key :
-
-```SQL
 CREATE TABLE
      Users (
          user_UUID uuid PRIMARY KEY NOT NULL,
@@ -16,11 +8,10 @@ CREATE TABLE
          user_password VARCHAR(20) NOT NULL,
          Created_at TIMESTAMP NOT NULL
      );
-```
 
-Orders table creation, with order_number as a Primary Key and user_UUID as a Foreign Key :
 
-```SQL
+-- Orders table creation, with order_number as a Primary Key and user_UUID as a Foreign Key
+
 CREATE TABLE
      Orders (
          order_number Serial PRIMARY KEY NOT NULL,
@@ -33,11 +24,10 @@ CREATE TABLE
           FOREIGN KEY (user_UUID)
            REFERENCES Users(user_UUID)
      );
-```
 
-Products table creation with product_UUID as a Primary Key :
 
-```SQL
+-- Products table creation with product_UUID as a Primary Key
+
  CREATE TABLE
      Products (
          product_UUID uuid PRIMARY KEY NOT NULL,
@@ -48,12 +38,10 @@ Products table creation with product_UUID as a Primary Key :
          created_at TIMESTAMP NOT NULL,
          update_at TIMESTAMP
      );
-```
 
 
-belong table creation with product_UUID and order_number as a Primary Key :
+-- belong table creation with product_UUID and order_number as a Primary Key
 
-```SQL
 CREATE TABLE
      productBelongOrder (
          product_UUID uuid NOT NULL,
@@ -61,4 +49,3 @@ CREATE TABLE
          CONSTRAINT fk_products FOREIGN KEY (product_UUID) REFERENCES products (product_UUID),
          CONSTRAINT fk_Orders FOREIGN KEY (order_number) REFERENCES orders (order_number)
      );
- ```
