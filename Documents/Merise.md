@@ -1,4 +1,4 @@
-<a href="README.md">Retour au menu</a>
+<a href="../README.md">Retour au menu</a>
 
 ## Méthodologie MERISE
 
