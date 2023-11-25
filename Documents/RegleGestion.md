@@ -1,4 +1,4 @@
-<a href="README.md">Retour au menu</a>
+<a href="../README.md">Retour au menu</a>
 
 # Règles de gestion de la base de données de Au Bon Deal
 
