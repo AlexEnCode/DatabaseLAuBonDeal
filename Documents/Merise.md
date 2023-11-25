@@ -1,3 +1,5 @@
+<a href="README.md">Retour au menu</a>
+
 ## Méthodologie MERISE
 
 La méthode Merise (Méthode d'Etude et de Réalisation Informatique pour les Systèmes d'Entreprise) est née à la fin des années 1970 en France, avec pour objectif de définir une démarche de conception de S.I. Le principe de base repose sur la séparation des données et des traitements.
